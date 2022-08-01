@@ -15,7 +15,7 @@ terraform {
     organization = "BrumeOrg"
 
     workspaces {
-      name = "gh-actions-dev"
+      name = "gh-action-dev"
     }
   }
 }
