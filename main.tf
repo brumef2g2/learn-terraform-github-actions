@@ -57,6 +57,11 @@ resource "aws_instance" "web" {
               EOF
 }
 
+tags = {
+    environment = "Production"
+    owner = "webdev"
+  }
+
 resource "aws_security_group" "web-sg" {
   name = "${random_pet.sg.id}-sg"
   ingress {
